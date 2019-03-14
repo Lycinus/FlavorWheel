@@ -2,9 +2,9 @@
   "name": "flavorwheel",
   "version": "1.0.0",
   "description": "### Description",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/Lycinus/FlavorWheel#readme",
   "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   }
