@@ -1,0 +1,23 @@
+{
+  "name": "flavorwheel",
+  "version": "1.0.0",
+  "description": "### Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lycinus/FlavorWheel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lycinus/FlavorWheel/issues"
+  },
+  "homepage": "https://github.com/Lycinus/FlavorWheel#readme",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
