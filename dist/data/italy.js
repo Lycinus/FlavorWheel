@@ -461,26 +461,3 @@ const italyChildren = [{
         }]
     }]
 }]
-
-chicken = [{
-    "name": "basil",
-    "size": 1
-}, {
-    "name": "oregano",
-    "size": 1
-}, {
-    "name": "sage",
-    "size": 1
-}, {
-    "name": "red pepper",
-    "size": 1
-}, {
-    "name": "fennel",
-    "size": 1
-}, {
-    "name": "rosemary",
-    "size": 1
-}, {
-    "name": "saffron",
-    "size": 1
-}]

@@ -46,6 +46,7 @@ d3.json("data.json", function(error, nodeData) {
         })
         .attr('dx', '-20')
         .attr('dy', '.5em')
+        .attr('display', function(d) { return d.depth <= 3 ? null : 'none' })
         .text(function(d) { return d.parent ? d.data.name : "" })
 })
 
