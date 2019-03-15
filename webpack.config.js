@@ -6,14 +6,16 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
-  rules: [
-    {
-      test: [/\.js?$/], 
-      exclude: /(node_modules)/, 
-      loader: 'babel-loader', 
-      query: {
-        presets: ['@babel/env', '@babel/react']
-      }
-    }
-  ]
+  module: {
+      rules: [
+        {
+          test: [/\.js?$/], 
+          exclude: /(node_modules)/, 
+          loader: 'babel-loader', 
+          query: {
+            presets: ['@babel/env', '@babel/react']
+          }
+        }
+      ]
+  }
 };

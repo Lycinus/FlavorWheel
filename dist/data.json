@@ -1,0 +1,29 @@
+{
+    "name": "Flavor Wheel", "children": [{
+        "name": "Europe",
+        "children": [{
+                "name": "French",
+                "children": [{"name": "chicken", "size": "1"}, {"name": "beef", "size": "1"}, {"name": "fish", "size": "1"}]
+            }, {
+                "name": "Mediterranean",
+                "children": [{"name": "chicken", "size": "1"}, {"name": "lamb", "size": "1"}, {"name": "fish", "size": "1"}]
+            }, {
+        }]
+    }, {
+        "name": "Asia",
+        "children": [{
+                "name": "Chinese",
+                "children": [{"name": "chicken", "size": "1"}, {"name": "pork", "size": "1"}, {"name": "fish", "size": "1"}]
+            }, {
+                "name": "Thai",
+                "children": [{"name": "chicken", "size": "1"}, {"name": "pork", "size": "1"}, {"name": "fish", "size": "1"}]
+        }] 
+    }, {
+        "name": "Latin America",
+        "children": [{
+                "name": "Mexican",
+                "children": [{"name": "chicken", "size": "1"}, {"name": "beef", "size": "1"}, {"name": "fish", "size": "1"}]
+        }]
+    }]
+}
+

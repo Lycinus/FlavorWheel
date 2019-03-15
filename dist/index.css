@@ -1,0 +1,29 @@
+body {
+    font-family: "Helvetica Neue"; 
+    display: grid; 
+    justify-content: stretch; 
+    grid-gap: 2rem;
+    margin: 0
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 4px 13px -2px rgba(182, 182, 182, 0.75);
+}
+
+.option-boxes {
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0px 40px
+}
+
+.selectors, .ingredients {
+    border: 1px solid rgb(184, 182, 182)
+}
+
+svg {
+    justify-self: center;
+    padding-bottom: 100px
+}
