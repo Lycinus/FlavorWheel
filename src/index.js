@@ -18,8 +18,9 @@ d3.json("data.json", function(error, nodeData) {
     if (error) throw error
 
     const root = d3.hierarchy(nodeData)
+        // .sum(function(d) { return d.size })
         .count()
-        // .sort(function(a, b) { return b.value - a.value })
+        .sort(function(a, b) { return b.value - a.value })
 
     partition(root);
     const arc = d3.arc()
