@@ -34,7 +34,7 @@ d3.json("data.json", function(error, nodeData) {
         .enter().append('g').attr('class', 'node')
     
     slice.append('path')
-        .attr('display', function(d) { return d.depth <= 3 ? null : 'none' })
+        .attr('display', function(d) { return d.depth <= 2 ? null : 'none' })
         .attr('d', arc)
         .style('stroke', '#fff')
         .style('fill', function(d) { return color((d.children ? d : d.parent).data.name); } );
@@ -44,13 +44,13 @@ d3.json("data.json", function(error, nodeData) {
         .attr('transform', function(d) {
             return `translate(${arc.centroid(d)})rotate(${computeTextRotation(d)})`
         })
-        .attr('dx', '-20')
+        .attr('dx', '-15')
         .attr('dy', '.5em')
-        .attr('display', function(d) { return d.depth <= 3 ? null : 'none' })
+        .attr('display', function(d) { return d.depth <= 2 ? null : 'none' })
         .text(function(d) { return d.parent ? d.data.name : "" })
 })
 
 function computeTextRotation(d) {
     const angle = (d.x0 + d.x1) / Math.PI * 90;
-    return (angle < 90 || angle > 270) ? angle : angle + 180 ;
+    return (angle < 180) ? angle - 90 : angle + 90;
 }
