@@ -1916,12 +1916,6 @@
             "name": "China",
             "children": [{"name": "chicken", "size": "1"}, {"name": "pork", "size": "1"}, {"name": "fish", "size": "1"}]
         }, {
-            "name": "Japan",
-            "children": [{"name": "chicken", "size": "1"}, {"name": "pork", "size": "1"}, {"name": "fish", "size": "1"}]
-        }, {
-            "name": "Korea",
-            "children": []
-        }, {
             "name": "Vietnam",
             "children": []
         }, {
@@ -1931,14 +1925,11 @@
             "name": "India",
             "children": []
         }, {
-            "name": "Iran",
-            "children": []
-        }, {
             "name": "Mediterranean",
             "children": []
         }] 
     }, {
-        "name": "North America",
+        "name": "Americas",
         "children": [{
             "name": "Mexico",
             "children": [{"name": "chicken", "size": "1"}, {"name": "beef", "size": "1"}, {"name": "fish", "size": "1"}]
@@ -1946,22 +1937,13 @@
             "name": "USA",
             "children": []
         }, {
-            "name": "Central America",
-            "children": []
-        }, {
             "name": "Caribbean",
             "children": []
-        }]
-    }, {
-        "name": "South America",
-        "children": [{
+        }, {
             "name": "Brazil",
             "children": [{"name": "chicken", "size": "1"}, {"name": "beef", "size": "1"}, {"name": "fish", "size": "1"}]
         }, {
             "name": "Argentina",
-            "children": []
-        }, {
-            "name": "Peru",
             "children": []
         }]
     }]
