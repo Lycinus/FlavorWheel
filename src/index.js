@@ -34,7 +34,7 @@ d3.json('data.json').then(data => {
         .style('font-size', '15px')
 
     const g = svg.append("g")
-        .attr("transform", `translate(350, 400)`);
+        .attr("transform", `translate(350, 350)`);
 
     const path = g.append("g")
         .selectAll("path")
@@ -44,7 +44,8 @@ d3.json('data.json').then(data => {
             .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
             .attr("d", d => arc(d.current));
 
-    path.style("cursor", "pointer")
+    path.filter(d => d.children)
+        .style("cursor", "pointer")
         .on("click", handleClick)
         .on('mouseover', mouseOver)
         .on('mouseout', mouseOut)
