@@ -4,7 +4,9 @@
 
 Flavor Wheel is a tool for planning delicious and cohesive meals by building dishes from their basic elements of salt, fat, acid, heat, and spice. Flavor Wheel will visualize flavors as a zoomable sunburst that displays two levels of hierarchy at a time. By successively clicking on elements in the innermost wheel, users will be able to add elements that complement the items they have already selected. Flavor Wheel is meant to be a more dynamic version of its inspiration, Wendy McNaughton’s watercolor drawings in Samin Nosrat’s cookbook Salt, Fat, Acid, Heat (see example below).
 
-image
+![from Samin Nosrat's "Salt, Fat, Acid, Heat"](https://www.saveur.com/sites/saveur.com/files/styles/800_1x_/public/salt-fat-acid-heat-world-of-acid_2000x1500.jpg?itok=-Ooj8jgY&fc=50,50)
+
+Reference-style: 
 
 ### Functionality
 
