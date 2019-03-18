@@ -23,5 +23,7 @@ header {
 .ingredients {
     margin-top: 100px;
     height: 600px;
-    border: 1px solid rgb(184, 182, 182)
+    /* border: 1px solid rgb(184, 182, 182); */
+    padding: 20px;
+    text-align: center;
 }
