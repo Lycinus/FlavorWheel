@@ -94,16 +94,32 @@ d3.json('data.json').then(data => {
         
         // Update recipe with new item or remove last item
         if (recipe[p.depth + 1]) {
+
+            // Remove text from appropriate table row
+            d3.select(`.ingredient-${p.depth + 1}-row`)
+              .text('')
+
+            // Delete item from recipe object
             delete recipe[p.depth + 1]
+
+            // Remove section from instructions
             d3.select('.ingredients')
               .selectAll('p')
               .data(Object.values(recipe))
               .exit()
               .remove()
+              
         } else if (p.depth !== 0) {
+
+            // Add text to appropriate table row
+            d3.select(`.ingredient-${p.depth}-row`)
+                .datum(p.data)
+                .text(d => d.name)
+
+            // Add item to recipe object
             recipe[p.depth] = {[p.depth]: p.data.name}
-            d3.select('.continent-row')
-                .text(p.data.name)
+
+            // Add section to instructions
             d3.select('.ingredients')
               .selectAll('p')
               .data(Object.values(recipe))

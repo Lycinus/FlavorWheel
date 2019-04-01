@@ -38,5 +38,6 @@ table, th, td {
 }
 
 th, td {
-    padding: 5px
+    padding: 5px;
+    min-width: 200px
 }
