@@ -1,3 +1,5 @@
+// import './table.js';
+
 const width = 700;
 const height = 750;
 const radius = width / 6;
@@ -20,6 +22,7 @@ const partition = data => {
 }
 
 const recipe = {}
+
 
 d3.json('data.json').then(data => {
     const root = partition(data);
@@ -67,14 +70,31 @@ d3.json('data.json').then(data => {
           .attr('r', radius)
           .attr('fill', 'none')
           .attr('pointer-events', 'all')
-          .on('click', handleClick);
+          .on('click', handleClick)
+
+    function addToTable(item, depth) {
+        const table = d3.select('table')
+        switch (depth) {
+            case 1:
+                table.select('.continent-row')
+                    .text(item)
+            case 2:
+                table.select('.cuisine-row')
+                    .text(item)
+            case 3:
+                table.select('.protein-row')
+                    .text(item)
+            case 4:
+                table.select('.vegetable-row')
+                    .text(item)
+        }
+    }
 
     function handleClick(p) {
         
         // Update recipe with new item or remove last item
         if (recipe[p.depth + 1]) {
             delete recipe[p.depth + 1]
-            console.log(recipe)
             d3.select('.ingredients')
               .selectAll('p')
               .data(Object.values(recipe))
@@ -82,7 +102,8 @@ d3.json('data.json').then(data => {
               .remove()
         } else if (p.depth !== 0) {
             recipe[p.depth] = {[p.depth]: p.data.name}
-            console.log(recipe)
+            d3.select('.continent-row')
+                .text(p.data.name)
             d3.select('.ingredients')
               .selectAll('p')
               .data(Object.values(recipe))
@@ -90,6 +111,8 @@ d3.json('data.json').then(data => {
               .append('p')
               .text(d => handleRecipeCreate(d))
         }
+    
+
 
         // Set root data for the middle circle
         parent.datum(p.parent || root);
@@ -166,7 +189,8 @@ d3.json('data.json').then(data => {
 
     function handleRecipeCreate(d) {
         const depth = Math.max(Object.keys(d));
-        const element = d[depth]
+        const element = d[depth];
+
         switch (Math.max(Object.keys(d))) {
             case 1:
                 if (element === 'Americas') {
@@ -187,5 +211,6 @@ d3.json('data.json').then(data => {
         }
     }
 });
+
 
 
