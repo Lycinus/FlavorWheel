@@ -21,6 +21,9 @@ const partition = data => {
             (root);
 }
 
+d3.select('tbody > tr:nth-child(1)')
+  .style('background-color', 'blue')
+
 const recipe = {}
 
 
@@ -72,23 +75,6 @@ d3.json('data.json').then(data => {
           .attr('pointer-events', 'all')
           .on('click', handleClick)
 
-    function addToTable(item, depth) {
-        const table = d3.select('table')
-        switch (depth) {
-            case 1:
-                table.select('.continent-row')
-                    .text(item)
-            case 2:
-                table.select('.cuisine-row')
-                    .text(item)
-            case 3:
-                table.select('.protein-row')
-                    .text(item)
-            case 4:
-                table.select('.vegetable-row')
-                    .text(item)
-        }
-    }
 
     function handleClick(p) {
         
@@ -99,6 +85,13 @@ d3.json('data.json').then(data => {
             d3.select(`.ingredient-${p.depth + 1}-row`)
               .text('')
 
+            // Switch highlight to appropriate row
+            d3.select(`tbody > tr:nth-child(${p.depth + 2})`)
+                .style('background-color', 'transparent')
+            
+            d3.select(`tbody > tr:nth-child(${p.depth + 1})`)
+                .style('background-color', 'blue')
+
             // Delete item from recipe object
             delete recipe[p.depth + 1]
 
@@ -108,13 +101,20 @@ d3.json('data.json').then(data => {
               .data(Object.values(recipe))
               .exit()
               .remove()
-              
+
         } else if (p.depth !== 0) {
 
             // Add text to appropriate table row
             d3.select(`.ingredient-${p.depth}-row`)
                 .datum(p.data)
                 .text(d => d.name)
+
+            // Switch highlight to appropriate row
+            d3.select(`tbody > tr:nth-child(${p.depth + 1})`)
+                .style('background-color', 'blue')
+            
+            d3.select(`tbody > tr:nth-child(${p.depth})`)
+                .style('background-color', 'transparent')
 
             // Add item to recipe object
             recipe[p.depth] = {[p.depth]: p.data.name}
