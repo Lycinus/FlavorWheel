@@ -22,7 +22,7 @@ const partition = data => {
 }
 
 d3.select('tbody > tr:nth-child(1)')
-  .style('background-color', 'blue')
+  .style('background-color', '#3e54ffde')
 
 const recipe = {}
 
@@ -90,7 +90,7 @@ d3.json('data.json').then(data => {
                 .style('background-color', 'transparent')
             
             d3.select(`tbody > tr:nth-child(${p.depth + 1})`)
-                .style('background-color', 'blue')
+                .style('background-color', '#3e54ffde')
 
             // Delete item from recipe object
             delete recipe[p.depth + 1]
@@ -111,7 +111,7 @@ d3.json('data.json').then(data => {
 
             // Switch highlight to appropriate row
             d3.select(`tbody > tr:nth-child(${p.depth + 1})`)
-                .style('background-color', 'blue')
+                .style('background-color', '#3e54ffde')
             
             d3.select(`tbody > tr:nth-child(${p.depth})`)
                 .style('background-color', 'transparent')
@@ -174,9 +174,8 @@ d3.json('data.json').then(data => {
     function mouseOver(d, i, n) {
         if (this.getAttribute('fill-opacity') > 0) {
             d3.select(n[i])
-                .transition()
-                .attr('stroke', this.getAttribute('fill'))
-                .attr('stroke-opacity', .8)
+                .transition().duration(100)
+                .attr('stroke', 'white')
         }
     }
 
@@ -185,7 +184,7 @@ d3.json('data.json').then(data => {
         if (this.getAttribute('fill-opacity') > 0) {
             d3.select(n[i])
               .transition()
-              .attr('stroke', 'white')
+              .attr('stroke', 'none')
         }
     }
 
