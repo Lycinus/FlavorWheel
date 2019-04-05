@@ -1,5 +1,3 @@
-// import './table.js';
-
 const width = 700;
 const height = 750;
 const radius = width / 6;
