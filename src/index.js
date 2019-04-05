@@ -34,13 +34,11 @@ d3.json('data.json').then(data => {
     root.each(d => d.current = d);
 
     const svg = d3.select('svg')
-        .style('width', width)
-        .style('height', height)
+        .attr('viewBox', '-300 -300 600 600')
         .style('font-family', 'Helvetica')
         .style('font-size', '15px')
 
     const g = svg.append('g')
-        .attr('transform', `translate(350, 300)`);
 
     const path = g.append('g')
         .selectAll('path')
@@ -96,7 +94,7 @@ d3.json('data.json').then(data => {
             delete recipe[p.depth + 1]
 
             // Remove section from instructions
-            d3.select('.ingredients')
+            d3.select('.ingredients-list')
               .selectAll('p')
               .data(Object.values(recipe))
               .exit()
@@ -120,7 +118,7 @@ d3.json('data.json').then(data => {
             recipe[p.depth] = {[p.depth]: p.data.name}
 
             // Add section to instructions
-            d3.select('.ingredients')
+            d3.select('.ingredients-list')
               .selectAll('p')
               .data(Object.values(recipe))
               .enter()

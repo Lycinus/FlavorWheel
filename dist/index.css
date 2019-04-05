@@ -1,7 +1,10 @@
+html {
+    margin: 0
+}
+
 body {
     font-family: "Helvetica Neue"; 
     display: grid; 
-    justify-content: stretch; 
     grid-gap: 1rem;
     margin: 0;
     background-color: #3e54ff80
@@ -9,25 +12,31 @@ body {
 
 header {
     text-align: left;
-    padding-left: 30px;
     width: 100%;
     color: white;
     background-color: #3e54ffde;
 }
 
+header h1 {
+    padding-left: 30px
+}
+
 .app-body {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding-right: 50px;
-    justify-content: start;
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 20px
 }
 
 .ingredients {
-    margin-top: 100px;
-    height: 600px;
-    /* border: 1px solid rgb(184, 182, 182); */
-    padding: 20px;
     text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 100%;
+    grid-gap: 1rem;
+    height: 100%;
+    align-items: stretch
 }
 
 table {
@@ -42,6 +51,29 @@ th:first-child, td:first-child {
 
 th, td {
     padding: 5px;
-    min-width: 200px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 50%
+}
+
+.ingredients-list {
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.233);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px
+}
+
+.ingredients-list p {
+    margin: 20px 0; 
+}
+
+.graph {
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.233);
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 80vh;
+    display: flex;
+    justify-content: center
+}
+
+.graph svg {
+    width: auto;
+    height: 100%;
 }
