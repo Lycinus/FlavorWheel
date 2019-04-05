@@ -5,7 +5,6 @@ html {
 body {
     font-family: "Helvetica Neue"; 
     display: grid; 
-    grid-gap: 1rem;
     margin: 0;
     background-color: #3e54ff80
 }
@@ -15,10 +14,37 @@ header {
     width: 100%;
     color: white;
     background-color: #3e54ffde;
+    font-family: "Fredoka One"
 }
 
 header h1 {
     padding-left: 30px
+}
+
+.instructions {
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.233);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 20px 20px 0 20px;
+    padding: 20px;
+    position: relative
+}
+
+.instructions i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.instructions h3 {
+    margin: 0
+}
+
+.instructions li {
+    margin: 5px
+}
+
+i:hover {
+    cursor: pointer
 }
 
 .app-body {
@@ -28,6 +54,7 @@ header h1 {
     grid-gap: 2rem;
     margin: 20px
 }
+
 
 .ingredients {
     text-align: center;

@@ -226,4 +226,13 @@ d3.json('data.json').then(data => {
 });
 
 
+// Close instructions upon clicking close button
+const instructions = d3.select('.instructions')
+
+function closeInstructions() {
+    instructions.style('display', 'none')
+}
+
+d3.select('.fas')
+  .on('click', closeInstructions)
 
