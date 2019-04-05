@@ -23,6 +23,7 @@ const partition = data => {
 
 d3.select('tbody > tr:nth-child(1)')
   .style('background-color', '#3e54ffde')
+  .style('font-weight', 'bold')
 
 const recipe = {}
 
@@ -86,9 +87,14 @@ d3.json('data.json').then(data => {
             // Switch highlight to appropriate row
             d3.select(`tbody > tr:nth-child(${p.depth + 2})`)
                 .style('background-color', 'transparent')
+                .style('font-weight', 'normal')
+                .style('color', 'black')
             
             d3.select(`tbody > tr:nth-child(${p.depth + 1})`)
                 .style('background-color', '#3e54ffde')
+                .style('font-weight', 'bold')
+                .style('color', 'white')
+
 
             // Delete item from recipe object
             delete recipe[p.depth + 1]
@@ -110,9 +116,14 @@ d3.json('data.json').then(data => {
             // Switch highlight to appropriate row
             d3.select(`tbody > tr:nth-child(${p.depth + 1})`)
                 .style('background-color', '#3e54ffde')
+                .style('font-weight', 'bold')
+                .style('color', 'white')
             
             d3.select(`tbody > tr:nth-child(${p.depth})`)
                 .style('background-color', 'transparent')
+                .style('font-weight', 'normal')
+                .style('color', 'black')
+
 
             // Add item to recipe object
             recipe[p.depth] = {[p.depth]: p.data.name}
