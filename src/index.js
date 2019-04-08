@@ -109,6 +109,9 @@ d3.json('data.json').then(data => {
             // Add text to appropriate table row
             d3.select(`.ingredient-${p.depth}-row`)
                 .datum(p.data)
+                .append('a')
+                .attr('href', d => handleLinkCreate(d))
+                .attr('target', '_blank')
                 .text(d => d.name)
 
             // Switch highlight to appropriate row
@@ -230,6 +233,17 @@ d3.json('data.json').then(data => {
                 };
             case 4:
                 return `${element[0].toUpperCase() + element.slice(1)} - good choice. Here are some herbs and spices that will go well with your items.`;
+        }
+    }
+
+    function handleLinkCreate(d) {
+        const cuisines = {'Asia':'Asian', 'Europe':'European', 'The Americas':'Cuisine of the Americas','Spain':'Spanish', 'Italy':'Italian', 'France':'French', 'Eastern Europe':'Eastern European', 'Greece':'Greek', 'China':'Chinese', 'Thailand':'Thai', 'Vietnam':'Vietnamese', 'India':'Indian', 'Mediterranean':'Mediterranean', 'Mexico':'Mexican', 'Caribbean':'Caribbean', 'Brazil':'Brazilian', 'Argentina':'Argentinian', 'Peru':'Peruvian'}
+        if (d.name == "The Americas") {
+            return `https://en.wikipedia.org/wiki/${cuisines[d.name]}`
+        } else if (Object.keys(cuisines).includes(d.name)) {
+            return `https://en.wikipedia.org/wiki/${cuisines[d.name]}_cuisine`
+        } else {
+            return `https://en.wikipedia.org/wiki/${d.name}`
         }
     }
 });
