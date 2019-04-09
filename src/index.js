@@ -56,7 +56,7 @@ d3.json('data.json').then(data => {
         .on('mouseout', mouseOut)
 
     path.filter(d => d.depth === 5)
-        .attr('fill', d => `url(#${d.data.name})`)
+        .attr('fill', d => `url(#${d.data.name.split(" ").join("-")})`)
 
     const label = g.append('g')
         .attr('pointer-events', 'none')
