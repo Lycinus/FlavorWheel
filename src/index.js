@@ -53,6 +53,9 @@ d3.json('data.json').then(data => {
         .on('mouseover', mouseOver)
         .on('mouseout', mouseOut)
 
+    path.filter(d => d.depth === 5)
+        .attr('fill', d => `url(#${d.data.name})`)
+
     const label = g.append('g')
         .attr('pointer-events', 'none')
         .attr('text-anchor', 'middle')
