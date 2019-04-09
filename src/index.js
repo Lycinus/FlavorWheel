@@ -35,7 +35,9 @@ d3.json('data.json').then(data => {
     const svg = d3.select('svg')
         .attr('viewBox', '-300 -300 600 600')
         .style('font-family', 'Helvetica')
-        .style('font-size', '15px')
+        .style('font-size', '16px')
+        .style('font-weight', '600')
+        .style('text-shadow', '0 0 10px white')
 
     const g = svg.append('g')
 
@@ -55,7 +57,6 @@ d3.json('data.json').then(data => {
 
     path.filter(d => d.depth === 5)
         .attr('fill', d => `url(#${d.data.name})`)
-        .style('color', 'white')
 
     const label = g.append('g')
         .attr('pointer-events', 'none')
@@ -67,7 +68,9 @@ d3.json('data.json').then(data => {
             .attr('dy', '0.35em')
             .attr('fill-opacity', d => +labelVisible(d.current))
             .attr('transform', d => labelTransform(d.current))
-            .text(d => d.data.name);
+            .attr('class', d => `label-depth-${d.data.depth}`)
+            .text(d => d.data.name)
+
 
     const parent = g.append('circle')
         .datum(root)
@@ -187,7 +190,7 @@ d3.json('data.json').then(data => {
                 .filter(function (d) {
                     return +this.getAttribute('fill-opacity') || arcVisible(d.target);
                 })
-                .attr('fill-opacity', d => arcVisible(d.target) ? 1 : 0)
+                .attr('fill-opacity', d => arcVisible(d.target) ? (d.children ? .6 : .75) : 0)
                 .attr('stroke', this.getAttribute('stroke') ? 'none' : null)
                 .attrTween('d', d => () => arc(d.current))
 
