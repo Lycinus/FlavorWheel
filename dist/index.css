@@ -108,3 +108,7 @@ th, td {
     width: auto;
     height: 100%;
 }
+
+.basil {
+    background-image: url('./photos/basil.jpg')
+}
