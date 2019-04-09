@@ -77,7 +77,6 @@ d3.json('data.json').then(data => {
         
         // Update recipe with new item or remove last item
         if (recipe[p.depth + 1]) {
-
             // Remove text from appropriate table row
             d3.select(`.ingredient-${p.depth + 1}-row`)
               .text('')
@@ -103,6 +102,13 @@ d3.json('data.json').then(data => {
               .data(Object.values(recipe))
               .exit()
               .remove()
+
+            // Remove herbs/spices from table if you were at the end of the table previously
+            if (p.depth === 3) {
+                d3.select('.ingredient-5-row')
+                  .selectAll('a')
+                  .remove()
+            }
 
         } else if (p.depth !== 0) {
 
@@ -136,6 +142,16 @@ d3.json('data.json').then(data => {
               .enter()
               .append('p')
               .text(d => handleRecipeCreate(d))
+
+            // Add herbs/spices to table if you're at the innermost level
+            if (p.depth === 4) {
+                d3.select('.ingredient-5-row')
+                    .selectAll('a')
+                    .data(p.data.children)
+                    .enter().append('a')
+                    .text(d => d.name)
+                    .attr('href', d => handleLinkCreate(d))
+            }
         }
     
 

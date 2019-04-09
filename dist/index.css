@@ -79,8 +79,11 @@ th:first-child, td:first-child {
 
 th, td {
     padding: 5px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    width: 50%
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.ingredient-5-row {
+    display: grid;
 }
 
 .ingredients-list {
