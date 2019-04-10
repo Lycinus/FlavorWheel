@@ -24,6 +24,8 @@ Flavor Wheel is a tool for planning delicious and cohesive meals by building dis
 
 The core of this app is a "zoomable sunburst plot" built with D3.js. The sunburst translates a hierarchical JSON object into an SVG object that transforms upon user input. While the plot only shows one level of hierarchy at a time, clicking sections of the plot (i.e. "paths") will transition the current level out of the visible layer of the SVG and the next layer into the visible layer.
 
+![Flavor Wheel sunburst](https://github.com/sdodonnell/FlavorWheel/tree/master/docs/sunburst.gif)
+
 ```js
 index.js
 
