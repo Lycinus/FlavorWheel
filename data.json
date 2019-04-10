@@ -2318,9 +2318,6 @@
                     }]
                 }]
             }]
-        }, {
-            "name": "Eastern Europe",
-            "children": []
         }]
     }, {
         "name": "Asia",
@@ -4654,12 +4651,497 @@
         }] 
     }, {
         "name": "Americas",
-        "children": [{
+        "children": [
+            {
             "name": "Mexico",
-            "children": [{"name": "chicken", "size": "1"}, {"name": "beef", "size": "1"}, {"name": "fish", "size": "1"}]
-        }, {
-            "name": "USA",
-            "children": []
+            "children": [
+                {
+                "name": "chicken",
+                "children": [{
+                    "name": "onions",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "squash",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "tomatoes",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "corn",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "bell peppers",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "jicama",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }]
+            }, {
+                "name": "pork",
+                "children": [{
+                    "name": "onions",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "squash",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "tomatoes",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "corn",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "bell peppers",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "jicama",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }]
+                }]
+            }, {
+                "name": "fish",
+                "children": [{
+                    "name": "onions",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "squash",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "tomatoes",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "corn",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "bell peppers",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }]
+                }, {
+                    "name": "jicama",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "thyme",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }]
+                }]
+            }, {
+                "name": "beans",
+                "children": [{
+                    "name": "onions",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "squash",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "tomatoes",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "corn",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "bell peppers",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }, {
+                    "name": "jicama",
+                    "children": [{
+                        "name": "chillies",
+                        "size": 1
+                    }, {
+                        "name": "cilantro",
+                        "size": 1
+                    }, {
+                        "name": "cumin",
+                        "size": 1
+                    }, {
+                        "name": "cinnamon",
+                        "size": 1
+                    }, {
+                        "name": "oregano",
+                        "size": 1
+                    }, {
+                        "name": "allspice",
+                        "size": 1
+                    }, {
+                        "name": "thyme"
+                    }]
+                }]
+            }]
         }, {
             "name": "Caribbean",
             "children": []
