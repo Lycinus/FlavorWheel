@@ -6,6 +6,8 @@ Flavor Wheel is a tool for planning delicious and cohesive meals by building dis
 
 ![from Samin Nosrat's "Salt, Fat, Acid, Heat"](https://www.saveur.com/sites/saveur.com/files/styles/800_1x_/public/salt-fat-acid-heat-world-of-acid_2000x1500.jpg?itok=-Ooj8jgY&fc=50,50)
 
+![Flavor Wheel home page](docs/home-page.png)
+
 ## Technologies
 
 * HTML & CSS
@@ -123,6 +125,8 @@ index.js
 ### Table and Recipe
 
 To keep track of the items select and to guide the user through the sunburst, two sidebar elements both constructed with D3.js, store and render data as the user clicks through the plot. First, a table identifies the level of hierarchy the user is currently at with highlighting and text bolding and stores the items selected upon click. Second, a narrative "recipe" guides the user through the sunburst and ties their selections together. 
+
+![Flavor Wheel table and recipe](docs/full-page.gif)
 
 ```js
 index.js
