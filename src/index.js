@@ -207,7 +207,6 @@ d3.json('data.json').then(data => {
     function mouseOver(d, i, n) {
         if (this.getAttribute('fill-opacity') > 0) {
             d3.select(n[i])
-                .transition().duration(100)
                 .attr('stroke', 'white')
         }
     }
@@ -216,7 +215,6 @@ d3.json('data.json').then(data => {
     function mouseOut(d, i, n) {
         if (this.getAttribute('fill-opacity') > 0) {
             d3.select(n[i])
-              .transition()
               .attr('stroke', 'none')
         }
     }
