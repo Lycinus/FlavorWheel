@@ -260,7 +260,7 @@ d3.json('data.json').then(data => {
     }
 
     function handleLinkCreate(d) {
-        const cuisines = {'Asia':'Asian', 'Europe':'European', 'The Americas':'Cuisine of the Americas','Spain':'Spanish', 'Italy':'Italian', 'France':'French', 'Eastern Europe':'Eastern European', 'Greece':'Greek', 'China':'Chinese', 'Thailand':'Thai', 'Vietnam':'Vietnamese', 'India':'Indian', 'Mediterranean':'Mediterranean', 'Mexico':'Mexican', 'Caribbean':'Caribbean', 'Brazil':'Brazilian', 'Argentina':'Argentinian', 'Peru':'Peruvian'}
+        const cuisines = {'Asia':'Asian', 'Europe':'European', 'The Americas':'Cuisine of the Americas','Spain':'Spanish', 'Italy':'Italian', 'France':'French', 'Eastern Europe':'Eastern European', 'Greece':'Greek', 'China':'Chinese', 'Thailand':'Thai', 'Vietnam':'Vietnamese', 'India':'Indian', 'Mediterranean':'Mediterranean', 'Mexico':'Mexican', 'Caribbean':'Caribbean', 'Brazil':'Brazilian', 'Argentina':'Argentine', 'Peru':'Peruvian'}
         if (d.name == "The Americas") {
             return `https://en.wikipedia.org/wiki/${cuisines[d.name]}`
         } else if (Object.keys(cuisines).includes(d.name)) {
