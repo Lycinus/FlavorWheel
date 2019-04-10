@@ -98,6 +98,8 @@ index.html
 ```
 
 ```js
+index.js
+
     const path = g.append('g')
         .selectAll('path')
         .data(root.descendants().slice(1))
